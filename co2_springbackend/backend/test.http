@@ -1,0 +1,29 @@
+### Login
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "passwort": "test123"
+}
+
+###  Standort anlegen
+POST http://localhost:8080/api/standorte
+Content-Type: application/json
+
+{
+  "name": "Werk München",
+  "adresse": "Musterstraße 1, 80331 München"
+}
+
+### Emission erfassen
+POST http://localhost:8080/api/emissionen
+Content-Type: application/json
+
+{
+  "kategorie": "STROMVERBRAUCH",
+  "wertCo2Kg": 120.5,
+  "datum": "2025-03-01",
+  "beschreibung": "Märzverbrauch",
+  "standortId": 1
+}
