@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ER-Diagramm CO2-Management" id="er-co2-management">
+    <mxGraphModel dx="1805" dy="962" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="light-dark(#FFFFFF,#FDFDFD)" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="standort" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontSize=12;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;Standort&lt;/b&gt;&lt;hr&gt;+ id : Long (PK)&lt;br&gt;name : String&lt;br&gt;adresse : String&lt;br&gt;erstelltAm : LocalDateTime" vertex="1">
+          <mxGeometry height="110" width="220" x="410" y="21" as="geometry" />
+        </mxCell>
+        <mxCell id="benutzer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontSize=12;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;Benutzer&lt;/b&gt;&lt;hr&gt;+ id : Long (PK)&lt;br&gt;username : String&lt;br&gt;email : String&lt;br&gt;passwort : String&lt;br&gt;rolle : RolleEnum&lt;br&gt;aktiv : boolean&lt;br&gt;erstelltAm : LocalDateTime&lt;br&gt;standort_id : Long (FK)" vertex="1">
+          <mxGeometry height="200" width="240" x="77" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="emission" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontSize=12;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;EmissionEintrag&lt;/b&gt;&lt;hr&gt;+ id : Long (PK)&lt;br&gt;kategorie : KategorieEnum&lt;br&gt;wertCo2Kg : Double&lt;br&gt;beschreibung : String&lt;br&gt;datum : LocalDate&lt;br&gt;erfasstAm : LocalDateTime&lt;br&gt;standort_id : Long (FK)&lt;br&gt;erfasst_von_id : Long (FK)" vertex="1">
+          <mxGeometry height="200" width="240" x="400" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="bericht" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontSize=12;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;Bericht&lt;/b&gt;&lt;hr&gt;+ id : Long (PK)&lt;br&gt;zeitraumVon : LocalDate&lt;br&gt;zeitraumBis : LocalDate&lt;br&gt;gesamtCo2Kg : double&lt;br&gt;erstelltAm : LocalDate&lt;br&gt;dateiPfad : String&lt;br&gt;standort_id : Long (FK)&lt;br&gt;benutzer_id : Long (FK)" vertex="1">
+          <mxGeometry height="200" width="240" x="720" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="rolleEnum" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontSize=11;dashed=1;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;br&gt;RolleEnum&lt;/b&gt;&lt;hr&gt;ADMINISTRATOR&lt;br&gt;NACHHALTIGKEITSBEAUFTRAGTER&lt;br&gt;FUEHRUNGSKRAFT&lt;br&gt;BENUTZER" vertex="1">
+          <mxGeometry height="120" width="220" x="90" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="kategorieEnum" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontSize=11;dashed=1;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;br&gt;KategorieEnum&lt;/b&gt;&lt;hr&gt;GESCHAEFTSREISE&lt;br&gt;STROMVERBRAUCH&lt;br&gt;FUHRPARK&lt;br&gt;SONSTIGES" vertex="1">
+          <mxGeometry height="120" width="220" x="410" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="e_standort_benutzer" edge="1" parent="1" source="standort" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=none;endArrow=none;fontSize=11;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" target="benutzer" value="1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_standort_emission" edge="1" parent="1" source="standort" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=none;endArrow=none;fontSize=11;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" target="emission" value="1         n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_standort_bericht" edge="1" parent="1" source="standort" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=none;endArrow=none;fontSize=12;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;strokeWidth=2;fontStyle=1" target="bericht" value="1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_benutzer_emission" edge="1" parent="1" source="benutzer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=none;endArrow=none;fontSize=11;exitX=1;exitY=0.5;entryX=0;entryY=0.75;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" target="emission" value="erfasst&#xa;1 : n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_benutzer_bericht" edge="1" parent="1" source="benutzer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=none;endArrow=none;fontSize=11;exitX=0.583;exitY=1.009;entryX=0.5;entryY=1;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" target="bericht" value="erstellt&#xa;1 : n">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="219.89" y="440.05" />
+              <mxPoint x="220.05" y="480.05" />
+              <mxPoint x="840" y="480.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_benutzer_rolle" edge="1" parent="1" source="benutzer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=none;endArrow=open;dashed=1;fontSize=10;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" target="rolleEnum" value="nutzt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_emission_kategorie" edge="1" parent="1" source="emission" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=none;endArrow=open;dashed=1;fontSize=10;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;" target="kategorieEnum" value="nutzt">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="460" />
+              <mxPoint x="580" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

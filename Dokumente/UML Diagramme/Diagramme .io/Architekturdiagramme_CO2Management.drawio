@@ -1,0 +1,114 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Schichtendiagramm" id="schichten">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="praesentation" value="&lt;b&gt;Präsentationsschicht (Client)&lt;/b&gt;&lt;br&gt;React 18 + Vite (SPA) &amp;nbsp;|&amp;nbsp; React Router &amp;nbsp;|&amp;nbsp; AuthContext / useReducer &amp;nbsp;|&amp;nbsp; Recharts &amp;nbsp;|&amp;nbsp; Axios (HTTP-Client)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="820" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="logik" value="&lt;b&gt;Geschäftslogikschicht (Server – Spring Boot)&lt;/b&gt;&lt;br&gt;Controller (REST-Endpunkte, @PreAuthorize)&lt;br&gt;Service (Geschäftslogik, Standort-Zugriffsprüfung)&lt;br&gt;Security (Spring Security, sitzungsbasierte Auth)&lt;br&gt;DTOs (Records) &amp;nbsp;|&amp;nbsp; GlobalExceptionHandler" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="820" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="daten" value="&lt;b&gt;Datenhaltungsschicht&lt;/b&gt;&lt;br&gt;Spring Data JPA Repositories &amp;nbsp;|&amp;nbsp; Hibernate (JPA-Provider) &amp;nbsp;|&amp;nbsp; H2-Datenbank (dateibasiert)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="820" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" value="HTTP / REST (JSON) via Axios" style="html=1;endArrow=block;startArrow=block;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="160" as="sourcePoint" />
+            <mxPoint x="450" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" value="JPA / Hibernate (SQL)" style="html=1;endArrow=block;startArrow=block;fontSize=11;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Komponentendiagramm" id="komponenten">
+    <mxGraphModel dx="1096" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1050" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frontend" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontColor=#000099;" value="Frontend&#xa;(React SPA)" vertex="1">
+          <mxGeometry height="60" width="180" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="controller" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontColor=#006633;" value="Controller" vertex="1">
+          <mxGeometry height="60" width="160" x="330" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="security" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontColor=#006633;" value="Security&#xa;(SecurityConfig)" vertex="1">
+          <mxGeometry height="60" width="160" x="290" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="service" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontColor=#006633;" value="Service" vertex="1">
+          <mxGeometry height="60" width="160" x="630" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="pdfexport" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontColor=#006633;" value="PdfExportService" vertex="1">
+          <mxGeometry height="60" width="160" x="680" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dto" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontColor=#666600;" value="DTO&#xa;(Records)" vertex="1">
+          <mxGeometry height="60" width="150" x="860" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="openpdf" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="openpdf&#xa;(externe Bibliothek)" vertex="1">
+          <mxGeometry height="60" width="150" x="880" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="exceptionhandler" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontColor=#006633;" value="GlobalException-&#xa;Handler" vertex="1">
+          <mxGeometry height="60" width="180" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="repository" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontColor=#663300;" value="Repository" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="domain" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontColor=#663300;" value="Domänenmodell&#xa;(Entity + Enum)" vertex="1">
+          <mxGeometry height="60" width="150" x="540" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="datainit" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontColor=#330066;" value="DataInitializer" vertex="1">
+          <mxGeometry height="60" width="180" x="50" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="h2db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontColor=#660000;" value="H2-Datenbank" vertex="1">
+          <mxGeometry height="80" width="130" x="870" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="frontend" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#000066;" target="controller" value="REST / JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="controller" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="service" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="controller" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="dto" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="controller" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="exceptionhandler" value="delegiert Fehler">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="controller" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="security" value="@PreAuthorize">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="service" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="dto" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="service" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="repository" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="service" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="pdfexport" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="pdfexport" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#006600;" target="openpdf" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="repository" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#994C00;" target="domain" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="repository" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#994C00;" target="h2db" value="Hibernate / JPA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="datainit" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#4C0099;" target="repository" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="datainit" style="dashed=1;html=1;endArrow=open;fontSize=10;strokeColor=#4C0099;" target="domain" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

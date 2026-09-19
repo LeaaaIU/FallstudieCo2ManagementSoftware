@@ -1,0 +1,576 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Klassendiagramm" id="klassendiagramm">
+    <mxGraphModel dx="3087" dy="1850" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edge6" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#7F00FF;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1901" y="1625" />
+              <mxPoint x="1901" y="1449" />
+            </Array>
+            <mxPoint x="1769" y="1625" as="sourcePoint" />
+            <mxPoint x="2033" y="1448.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" edge="1" parent="1" source="EmissionEintrag" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#7F00FF;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="KategorieEnum" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2148" y="1895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" edge="1" parent="1" source="StandortRepository" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#000066;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="Standort" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220.29" y="1222" />
+              <mxPoint x="220.29" y="1455.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#000066;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="831" y="1344" />
+              <mxPoint x="831" y="1607.07" />
+            </Array>
+            <mxPoint x="111" y="1344" as="sourcePoint" />
+            <mxPoint x="1530" y="1607.0545454545454" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" edge="1" parent="1" source="BerichtRepository" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#000066;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="Bericht" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="819" y="1468" />
+              <mxPoint x="819" y="2067" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" edge="1" parent="1" source="EmissionEintragRepository" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#000066;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="EmissionEintrag" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-37" y="1837.46" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" edge="1" parent="1" source="BenutzerService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="174" y="173.89" />
+              <mxPoint x="174" y="1319.83" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge14" edge="1" parent="1" source="BenutzerService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1439.33" y="187.05" />
+              <mxPoint x="1439.33" y="287.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge15" edge="1" parent="1" source="BenutzerService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerResponse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1337.24" y="215.33" />
+              <mxPoint x="1337.24" y="471.14" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge16" edge="1" parent="1" source="BerichtService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BerichtRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="202" y="446.72" />
+              <mxPoint x="202" y="1456.62" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge19" edge="1" parent="1" source="BerichtService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="188.02" y="440" />
+              <mxPoint x="188.02" y="1332.44" />
+            </Array>
+            <mxPoint x="388" y="440" as="sourcePoint" />
+            <mxPoint x="113" y="1349.5882352941176" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge20" edge="1" parent="1" source="BerichtService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BerichtRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1223.71" y="439.05" />
+              <mxPoint x="1223.71" y="631.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge21" edge="1" parent="1" source="EmissionService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="EmissionEintragRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="274.43" y="691" />
+              <mxPoint x="274.43" y="1623.93" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge22" edge="1" parent="1" source="EmissionService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="StandortStatistikResponse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1152.1" y="691.05" />
+              <mxPoint x="1152.1" y="1135.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge23" edge="1" parent="1" source="EmissionService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="ZeitreihenPunkt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130.76" y="707.05" />
+              <mxPoint x="1130.76" y="1224.38" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge24" edge="1" parent="1" source="PdfExportService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="EmissionEintragRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="388.73" y="910.64" />
+              <mxPoint x="388.73" y="1639.82" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge25" edge="1" parent="1" source="PdfExportService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="StandortRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-47.37" y="903.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge26" edge="1" parent="1" source="StandortService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;entryX=1.002;entryY=0.346;entryDx=0;entryDy=0;entryPerimeter=0;" target="StandortRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="1162.82" />
+              <mxPoint x="412" y="1212.36" />
+              <mxPoint x="119.36" y="1212.36" />
+            </Array>
+            <mxPoint x="398" y="1105.9964516129035" as="sourcePoint" />
+            <mxPoint x="-37" y="1191" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge27" edge="1" parent="1" source="StandortService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="StandortRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1294.57" y="1091.05" />
+              <mxPoint x="1294.57" y="895.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge28" edge="1" parent="1" source="StandortService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#663300;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="StandortResponse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1446.19" y="1106" />
+              <mxPoint x="1446.19" y="1015.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge29" edge="1" parent="1" source="AuthController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-326" y="139" />
+              <mxPoint x="-326" y="1321.37" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge30" edge="1" parent="1" source="AuthController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="AuthMeResponse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-325.47" y="115.07" />
+              <mxPoint x="-325.47" y="-28.93" />
+              <mxPoint x="1491.2" y="-28.93" />
+              <mxPoint x="1491.2" y="135.07" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge31" edge="1" parent="1" source="BenutzerController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="128.93" y="319.07" />
+              <mxPoint x="128.93" y="157.87" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge32" edge="1" parent="1" source="BenutzerController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-119.6" y="266.53" />
+              <mxPoint x="-119.6" y="-14.8" />
+              <mxPoint x="1463.73" y="-14.8" />
+              <mxPoint x="1463.73" y="271.87" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge33" edge="1" parent="1" source="BenutzerController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="BenutzerResponse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-94" y="303.33" />
+              <mxPoint x="-94" y="-0.8" />
+              <mxPoint x="1356.27" y="-0.8" />
+              <mxPoint x="1356.27" y="456.53" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge34" edge="1" parent="1" source="BerichtController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;exitX=0.997;exitY=0.374;exitDx=0;exitDy=0;exitPerimeter=0;" target="BerichtService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-494" y="504.38" />
+              <mxPoint x="127" y="504.38" />
+              <mxPoint x="127" y="426" />
+            </Array>
+            <mxPoint x="-494" y="525.9956410256411" as="sourcePoint" />
+            <mxPoint x="388" y="425.99564102564113" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge35" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="PdfExportService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="138.76" y="547.05" />
+              <mxPoint x="138.76" y="889.62" />
+            </Array>
+            <mxPoint x="-494.0000000000002" y="547.0000000000002" as="sourcePoint" />
+            <mxPoint x="378" y="889.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge36" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;entryX=-0.003;entryY=0.468;entryDx=0;entryDy=0;entryPerimeter=0;" target="BenutzerRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-339.99" y="557" />
+              <mxPoint x="-339.99" y="1332.2" />
+            </Array>
+            <mxPoint x="-494" y="557" as="sourcePoint" />
+            <mxPoint x="-187" y="1354.027027027027" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge37" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-68.4" y="536" />
+              <mxPoint x="-68.4" y="21.2" />
+              <mxPoint x="1241.07" y="21.2" />
+              <mxPoint x="1241.07" y="604.8" />
+            </Array>
+            <mxPoint x="-496" y="535.95" as="sourcePoint" />
+            <mxPoint x="1815" y="604.8148648648648" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge38" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-493.95" y="755.05" />
+              <mxPoint x="-6.52" y="755.05" />
+              <mxPoint x="-6.52" y="658" />
+            </Array>
+            <mxPoint x="-494" y="758" as="sourcePoint" />
+            <mxPoint x="516" y="658" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge39" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;entryX=0.009;entryY=0.423;entryDx=0;entryDy=0;entryPerimeter=0;" target="StandortService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="446.18" y="781" />
+              <mxPoint x="446.18" y="1080.64" />
+            </Array>
+            <mxPoint x="-493" y="781" as="sourcePoint" />
+            <mxPoint x="399" y="1081" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge40" edge="1" parent="1" source="EmissionController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;exitX=0.995;exitY=0.616;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-494" y="817.92" />
+              <mxPoint x="-354" y="817.23" />
+              <mxPoint x="-354" y="1343" />
+            </Array>
+            <mxPoint x="-494" y="798" as="sourcePoint" />
+            <mxPoint x="-187" y="1343.0344827586205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge41" edge="1" parent="1" source="EmissionController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="EmissionRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="257.64" y="791" />
+              <mxPoint x="257.64" y="1265.36" />
+              <mxPoint x="1254" y="1265.36" />
+              <mxPoint x="1254" y="767.09" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge42" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;exitX=0.997;exitY=0.636;exitDx=0;exitDy=0;exitPerimeter=0;" target="StandortService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-517" y="1037.35" />
+              <mxPoint x="-512.94" y="1037.35" />
+              <mxPoint x="-512.94" y="1036" />
+              <mxPoint x="-21.94" y="1036" />
+              <mxPoint x="-21.94" y="1104.24" />
+            </Array>
+            <mxPoint x="-517" y="1039.268" as="sourcePoint" />
+            <mxPoint x="399.02" y="1098.42" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge43" edge="1" parent="1" source="StandortController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="StandortRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="244" y="1011" />
+              <mxPoint x="244" y="1283.55" />
+              <mxPoint x="1275.55" y="1283.55" />
+              <mxPoint x="1275.55" y="880.82" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge44" edge="1" parent="1" source="StandortController" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#336600;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="StandortResponse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230.08" y="1021.92" />
+              <mxPoint x="230.08" y="1304.54" />
+              <mxPoint x="1470.54" y="1304.54" />
+              <mxPoint x="1470.54" y="1030.23" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge45" edge="1" parent="1" source="SecurityConfig" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#CC0000;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;exitX=0.998;exitY=0.373;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-698.57" y="1995.86" />
+              <mxPoint x="297.57" y="1995.86" />
+              <mxPoint x="297.57" y="188" />
+            </Array>
+            <mxPoint x="-687.9999999999998" y="2019.0000000000005" as="sourcePoint" />
+            <mxPoint x="535" y="188" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge46" edge="1" parent="1" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#CC0000;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;entryX=0.003;entryY=0.723;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-396.97" y="2220.25" />
+              <mxPoint x="-396.97" y="1353.22" />
+              <mxPoint x="-255.9" y="1353.22" />
+            </Array>
+            <mxPoint x="-687.9999999999998" y="2220.21" as="sourcePoint" />
+            <mxPoint x="-187.0999999999999" y="1352.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge47" edge="1" parent="1" source="DataInitializer" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#CC0000;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;exitX=0.998;exitY=0.437;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-688.71" y="2186" />
+              <mxPoint x="-411.98" y="2186" />
+              <mxPoint x="-411.98" y="1225.02" />
+            </Array>
+            <mxPoint x="-688.9999999999998" y="2200.9999999999995" as="sourcePoint" />
+            <mxPoint x="-178" y="1225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge48" edge="1" parent="1" source="DataInitializer" style="dashed=1;html=1;endArrow=none;fontSize=9;labelBackgroundColor=none;strokeColor=#000066;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;endFill=0;startArrow=open;startFill=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-45" y="2156" />
+            </Array>
+            <mxPoint x="-633" y="2159.67" as="sourcePoint" />
+            <mxPoint x="-44.97297297297291" y="1695.0000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a0hnjVpa3WqoAd-sNYzg-7" connectable="0" parent="1" style="group;fillColor=#ffff88;strokeColor=#36393d;opacity=20;" value="" vertex="1">
+          <mxGeometry height="1252" width="420" x="-894" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_controller" parent="a0hnjVpa3WqoAd-sNYzg-7" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#0F8B8D;fontSize=13;fontStyle=1;spacingTop=6;spacingLeft=6;rounded=1;labelBackgroundColor=#ECFEFF;fontColor=#143642;opacity=40;strokeWidth=2;" value="package controller" vertex="1">
+          <mxGeometry height="1252" width="420" as="geometry" />
+        </mxCell>
+        <mxCell id="AuthController" parent="a0hnjVpa3WqoAd-sNYzg-7" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;AuthController&lt;/b&gt;&lt;hr&gt;- authenticationManager : AuthenticationManager&lt;br&gt;- benutzerRepository : BenutzerRepository&lt;hr&gt;+ login(LoginRequest, HttpSession) : ResponseEntity&lt;?&gt;&lt;br&gt;+ logout(HttpSession) : ResponseEntity&lt;?&gt;&lt;br&gt;+ me(Authentication) : ResponseEntity&lt;?&gt;" vertex="1">
+          <mxGeometry height="152" width="320" x="50" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BenutzerController" parent="a0hnjVpa3WqoAd-sNYzg-7" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;@PreAuthorize(ADMINISTRATOR)&gt;&gt;&lt;br&gt;BenutzerController&lt;/b&gt;&lt;hr&gt;- benutzerService : BenutzerService&lt;hr&gt;+ getBenutzer() : List&lt;BenutzerResponse&gt;&lt;br&gt;+ getBenutzerById(Long) : BenutzerResponse&lt;br&gt;+ createBenutzer(BenutzerRequest) : ResponseEntity&lt;BenutzerResponse&gt;&lt;br&gt;+ updateBenutzer(Long, BenutzerRequest) : ResponseEntity&lt;BenutzerResponse&gt;&lt;br&gt;+ deleteBenutzer(Long) : ResponseEntity&lt;Void&gt;" vertex="1">
+          <mxGeometry height="168" width="340" x="40" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="BerichtController" parent="a0hnjVpa3WqoAd-sNYzg-7" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;BerichtController&lt;/b&gt;&lt;hr&gt;- berichtService : BerichtService&lt;br&gt;- pdfExportService : PdfExportService&lt;br&gt;- benutzerRepo : BenutzerRepository&lt;hr&gt;+ createBericht(BerichtRequest, Authentication) : ResponseEntity&lt;Bericht&gt;&lt;br&gt;+ getBericht(Long, Authentication) : ResponseEntity&lt;Bericht&gt;&lt;br&gt;+ getBerichtPdf(Long, Authentication) : ResponseEntity&lt;byte[]&gt;&lt;br&gt;+ exportEmissionenPdf(Long, LocalDate, LocalDate, Authentication) : ResponseEntity&lt;byte[]&gt;&lt;br&gt;+ getBerichte(Authentication) : List&lt;Bericht&gt;&lt;br&gt;- ermittleAktuellenBenutzer(Authentication) : Benutzer&lt;br&gt;- ermittleEffektivenStandort(Long, Benutzer) : Long" vertex="1">
+          <mxGeometry height="232" width="380" x="20" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="EmissionController" parent="a0hnjVpa3WqoAd-sNYzg-7" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;EmissionController&lt;/b&gt;&lt;hr&gt;- emissionService : EmissionService&lt;br&gt;- standortService : StandortService&lt;br&gt;- benutzerRepo : BenutzerRepository&lt;hr&gt;+ getEmissionen(Long, LocalDate, LocalDate, Authentication) : List&lt;EmissionEintrag&gt;&lt;br&gt;+ getStatistikProStandort(Authentication) : List&lt;StandortStatistikResponse&gt;&lt;br&gt;+ getZeitreihe(Long, LocalDate, LocalDate, Authentication) : List&lt;ZeitreihenPunkt&gt;&lt;br&gt;+ createEmission(EmissionRequest, Authentication) : ResponseEntity&lt;EmissionEintrag&gt;&lt;br&gt;+ updateEmission(Long, EmissionRequest) : ResponseEntity&lt;EmissionEintrag&gt;&lt;br&gt;+ deleteEmission(Long) : ResponseEntity&lt;Void&gt;&lt;br&gt;- ermittleAktuellenBenutzer(Authentication) : Benutzer" vertex="1">
+          <mxGeometry height="232" width="380" x="20" y="642" as="geometry" />
+        </mxCell>
+        <mxCell id="StandortController" parent="a0hnjVpa3WqoAd-sNYzg-7" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;StandortController&lt;/b&gt;&lt;hr&gt;- standortService : StandortService&lt;hr&gt;+ getStandorte() : List&lt;StandortResponse&gt;&lt;br&gt;+ getStandortById(Long) : StandortResponse&lt;br&gt;+ createStandort(StandortRequest) : ResponseEntity&lt;StandortResponse&gt;&lt;br&gt;+ updateStandort(Long, StandortRequest) : ResponseEntity&lt;StandortResponse&gt;&lt;br&gt;+ deleteStandort(Long) : ResponseEntity&lt;Void&gt;" vertex="1">
+          <mxGeometry height="168" width="340" x="40" y="894" as="geometry" />
+        </mxCell>
+        <mxCell id="GlobalExceptionHandler" parent="a0hnjVpa3WqoAd-sNYzg-7" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;@RestControllerAdvice&gt;&gt;&lt;br&gt;GlobalExceptionHandler&lt;/b&gt;&lt;hr&gt; &lt;hr&gt;+ handleRuntime(RuntimeException) : ResponseEntity&lt;Map&gt;&lt;br&gt;+ handleValidation(MethodArgumentNotValidException) : ResponseEntity&lt;Map&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="40" y="1082" as="geometry" />
+        </mxCell>
+        <mxCell id="a0hnjVpa3WqoAd-sNYzg-8" connectable="0" parent="1" style="group;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#663300;opacity=20;" value="" vertex="1">
+          <mxGeometry height="1208" width="380" x="495" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_service" parent="a0hnjVpa3WqoAd-sNYzg-8" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#0F8B8D;fontSize=13;fontStyle=1;spacingTop=6;spacingLeft=6;rounded=1;labelBackgroundColor=#ECFEFF;fontColor=#143642;strokeWidth=2;opacity=40;labelBorderColor=none;" value="package service" vertex="1">
+          <mxGeometry height="1208" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="BenutzerService" parent="a0hnjVpa3WqoAd-sNYzg-8" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;implements UserDetailsService&gt;&gt;&lt;br&gt;BenutzerService&lt;/b&gt;&lt;hr&gt;- benutzerRepo : BenutzerRepository&lt;br&gt;- passwordEncoder : PasswordEncoder&lt;br&gt;- standortService : StandortService&lt;hr&gt;+ loadUserByUsername(String) : UserDetails&lt;br&gt;+ findAll() : List&lt;BenutzerResponse&gt;&lt;br&gt;+ findById(Long) : Benutzer&lt;br&gt;+ findResponseById(Long) : BenutzerResponse&lt;br&gt;+ create(BenutzerRequest) : BenutzerResponse&lt;br&gt;+ update(Long, BenutzerRequest) : BenutzerResponse&lt;br&gt;+ deleteById(Long) : void&lt;br&gt;- toResponse(Benutzer) : BenutzerResponse" vertex="1">
+          <mxGeometry height="248" width="320" x="30" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BerichtService" parent="a0hnjVpa3WqoAd-sNYzg-8" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;BerichtService&lt;/b&gt;&lt;hr&gt;- berichtRepo : BerichtRepository&lt;br&gt;- emissionService : EmissionService&lt;br&gt;- standortService : StandortService&lt;br&gt;- benutzerRepo : BenutzerRepository&lt;hr&gt;+ createBericht(BerichtRequest, String) : Bericht&lt;br&gt;+ getBericht(Long, Benutzer) : Bericht&lt;br&gt;+ generatePdf(Long, Benutzer) : byte[]&lt;br&gt;+ findAll(Benutzer) : List&lt;Bericht&gt;&lt;br&gt;- pruefeZugriff(Bericht, Benutzer) : void" vertex="1">
+          <mxGeometry height="216" width="320" x="30" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="EmissionService" parent="a0hnjVpa3WqoAd-sNYzg-8" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;EmissionService&lt;/b&gt;&lt;hr&gt;- emissionRepo : EmissionEintragRepository&lt;hr&gt;+ findByStandortId(Long) : List&lt;EmissionEintrag&gt;&lt;br&gt;+ filterByZeitraum(LocalDate, LocalDate) : List&lt;EmissionEintrag&gt;&lt;br&gt;+ calcGesamtemission(Long) : Double&lt;br&gt;+ findById(Long) : EmissionEintrag&lt;br&gt;+ save(EmissionEintrag) : EmissionEintrag&lt;br&gt;+ deleteById(Long) : void&lt;br&gt;+ findGefiltert(Long, LocalDate, LocalDate, Benutzer) : List&lt;EmissionEintrag&gt;&lt;br&gt;+ statistikProStandort(Benutzer) : List&lt;StandortStatistikResponse&gt;&lt;br&gt;+ zeitreihe(Long, LocalDate, LocalDate, Benutzer) : List&lt;ZeitreihenPunkt&gt;&lt;br&gt;- ermittleEffektivenStandort(Long, Benutzer) : Long" vertex="1">
+          <mxGeometry height="248" width="340" x="20" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="PdfExportService" parent="a0hnjVpa3WqoAd-sNYzg-8" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;PdfExportService&lt;/b&gt;&lt;hr&gt;- emissionEintragRepository : EmissionEintragRepository&lt;br&gt;- standortRepository : StandortRepository&lt;hr&gt;+ exportEmissionsPdf(Long, LocalDate, LocalDate) : byte[]&lt;br&gt;- addHeaderCell(PdfPTable, String, Font) : void" vertex="1">
+          <mxGeometry height="136" width="340" x="20" y="802" as="geometry" />
+        </mxCell>
+        <mxCell id="StandortService" parent="a0hnjVpa3WqoAd-sNYzg-8" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;StandortService&lt;/b&gt;&lt;hr&gt;- standortRepository : StandortRepository&lt;hr&gt;+ findById(Long) : Standort&lt;br&gt;+ findAll() : List&lt;StandortResponse&gt;&lt;br&gt;+ findResponseById(Long) : StandortResponse&lt;br&gt;+ create(StandortRequest) : StandortResponse&lt;br&gt;+ update(Long, StandortRequest) : StandortResponse&lt;br&gt;+ deleteById(Long) : void&lt;br&gt;- toResponse(Standort) : StandortResponse" vertex="1">
+          <mxGeometry height="200" width="300" x="40" y="958" as="geometry" />
+        </mxCell>
+        <mxCell id="edge17" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-8" source="BerichtService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="EmissionService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge18" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-8" source="BerichtService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="StandortService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-29.95" y="423.15" />
+              <mxPoint x="-29.95" y="1028.18" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge13" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-8" source="BenutzerService" style="dashed=1;html=1;endArrow=open;fontSize=9;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;entryX=0.002;entryY=0.471;entryDx=0;entryDy=0;entryPerimeter=0;" target="StandortService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-184" y="164" />
+              <mxPoint x="-184" y="1053.53" />
+              <mxPoint x="6.94" y="1053.53" />
+              <mxPoint x="6.94" y="1052.18" />
+            </Array>
+            <mxPoint x="-107.11999999999989" y="164.03800000000012" as="sourcePoint" />
+            <mxPoint x="-96.70000000000005" y="1050.99" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a0hnjVpa3WqoAd-sNYzg-9" connectable="0" parent="1" style="group;fillColor=#9AC7BF;strokeColor=#0e8088;opacity=20;" value="" vertex="1">
+          <mxGeometry height="1284" width="270" x="1807" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_dto" parent="a0hnjVpa3WqoAd-sNYzg-9" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#0F8B8D;fontSize=13;fontStyle=1;spacingTop=6;spacingLeft=6;rounded=1;labelBackgroundColor=#ECFEFF;fontColor=#143642;opacity=40;strokeWidth=2;" value="package dto" vertex="1">
+          <mxGeometry height="1284" width="270" as="geometry" />
+        </mxCell>
+        <mxCell id="AuthMeResponse" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;AuthMeResponse&lt;/b&gt;&lt;hr&gt;username : String&lt;br&gt;rolle : String&lt;br&gt;standortId : Long&lt;br&gt;standortName : String" vertex="1">
+          <mxGeometry height="116" width="230" x="10" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="BenutzerRequest" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;BenutzerRequest&lt;/b&gt;&lt;hr&gt;username : String&lt;br&gt;email : String&lt;br&gt;passwort : String&lt;br&gt;rolle : RolleEnum&lt;br&gt;standortId : Long&lt;br&gt;aktiv : Boolean" vertex="1">
+          <mxGeometry height="148" width="230" x="10" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="BenutzerResponse" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;BenutzerResponse&lt;/b&gt;&lt;hr&gt;id : Long&lt;br&gt;username : String&lt;br&gt;email : String&lt;br&gt;rolle : RolleEnum&lt;br&gt;standortId : Long&lt;br&gt;standortName : String&lt;br&gt;aktiv : boolean&lt;br&gt;erstelltAm : LocalDateTime" vertex="1">
+          <mxGeometry height="180" width="230" x="10" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="BerichtRequest" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;BerichtRequest&lt;/b&gt;&lt;hr&gt;zeitraumVon : LocalDate&lt;br&gt;zeitraumBis : LocalDate&lt;br&gt;standortId : Long" vertex="1">
+          <mxGeometry height="100" width="230" x="10" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="EmissionRequest" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;EmissionRequest&lt;/b&gt;&lt;hr&gt;kategorie : KategorieEnum&lt;br&gt;wertCo2Kg : Double&lt;br&gt;datum : LocalDate&lt;br&gt;beschreibung : String&lt;br&gt;standortId : Long" vertex="1">
+          <mxGeometry height="132" width="230" x="10" y="668" as="geometry" />
+        </mxCell>
+        <mxCell id="StandortRequest" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;StandortRequest&lt;/b&gt;&lt;hr&gt;name : String&lt;br&gt;adresse : String" vertex="1">
+          <mxGeometry height="84" width="230" x="10" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="StandortResponse" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;StandortResponse&lt;/b&gt;&lt;hr&gt;id : Long&lt;br&gt;name : String&lt;br&gt;adresse : String&lt;br&gt;erstelltAm : LocalDateTime" vertex="1">
+          <mxGeometry height="116" width="230" x="10" y="924" as="geometry" />
+        </mxCell>
+        <mxCell id="StandortStatistikResponse" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;StandortStatistikResponse&lt;/b&gt;&lt;hr&gt;standortName : String&lt;br&gt;gesamtCO2 : Double" vertex="1">
+          <mxGeometry height="84" width="230" x="10" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ZeitreihenPunkt" parent="a0hnjVpa3WqoAd-sNYzg-9" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;record&gt;&gt;&lt;br&gt;ZeitreihenPunkt&lt;/b&gt;&lt;hr&gt;monat : String&lt;br&gt;gesamtCO2 : Double" vertex="1">
+          <mxGeometry height="84" width="230" x="10" y="1164" as="geometry" />
+        </mxCell>
+        <mxCell id="a0hnjVpa3WqoAd-sNYzg-10" connectable="0" parent="1" style="group;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;opacity=20;" value="" vertex="1">
+          <mxGeometry height="544" width="380" x="-1038" y="1778" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_config" parent="a0hnjVpa3WqoAd-sNYzg-10" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#0F8B8D;fontSize=13;fontStyle=1;spacingTop=6;spacingLeft=6;rounded=1;labelBackgroundColor=#ECFEFF;fontColor=#143642;strokeWidth=2;opacity=40;" value="package config" vertex="1">
+          <mxGeometry height="544" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="AppConfig" parent="a0hnjVpa3WqoAd-sNYzg-10" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;@Configuration&gt;&gt;&lt;br&gt;AppConfig&lt;/b&gt;&lt;hr&gt; &lt;hr&gt;+ passwordEncoder() : PasswordEncoder" vertex="1">
+          <mxGeometry height="104" width="280" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SecurityConfig" parent="a0hnjVpa3WqoAd-sNYzg-10" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;@Configuration&gt;&gt;&lt;br&gt;SecurityConfig&lt;/b&gt;&lt;hr&gt;- benutzerService : BenutzerService&lt;br&gt;- passwordEncoder : PasswordEncoder&lt;hr&gt;+ filterChain(HttpSecurity) : SecurityFilterChain&lt;br&gt;+ authenticationManager() : AuthenticationManager&lt;br&gt;+ corsConfigurationSource() : CorsConfigurationSource" vertex="1">
+          <mxGeometry height="152" width="320" x="20" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="DataInitializer" parent="a0hnjVpa3WqoAd-sNYzg-10" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;implements CommandLineRunner&gt;&gt;&lt;br&gt;DataInitializer&lt;/b&gt;&lt;hr&gt;- benutzerRepository : BenutzerRepository&lt;br&gt;- standortRepository : StandortRepository&lt;br&gt;- emissionEintragRepository : EmissionEintragRepository&lt;br&gt;- passwordEncoder : PasswordEncoder&lt;hr&gt;+ run(String...) : void&lt;br&gt;- erstelleEintrag(...) : EmissionEintrag" vertex="1">
+          <mxGeometry height="168" width="340" x="10" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="a0hnjVpa3WqoAd-sNYzg-11" connectable="0" parent="1" style="group;fillColor=#bac8d3;strokeColor=#23445d;opacity=20;" value="" vertex="1">
+          <mxGeometry height="600" width="380" x="-227" y="1142" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_repository" parent="a0hnjVpa3WqoAd-sNYzg-11" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#0F8B8D;fontSize=13;fontStyle=1;spacingTop=6;spacingLeft=6;rounded=1;labelBackgroundColor=#ECFEFF;fontColor=#143642;strokeWidth=2;opacity=40;" value="package repository" vertex="1">
+          <mxGeometry height="600" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="StandortRepository" parent="a0hnjVpa3WqoAd-sNYzg-11" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;interface&gt;&gt;&lt;br&gt;StandortRepository&lt;/b&gt;&lt;hr&gt;extends JpaRepository&lt;Standort, Long&gt;" vertex="1">
+          <mxGeometry height="68" width="280" x="50" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="BenutzerRepository" parent="a0hnjVpa3WqoAd-sNYzg-11" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;interface&gt;&gt;&lt;br&gt;BenutzerRepository&lt;/b&gt;&lt;hr&gt;extends JpaRepository&lt;Benutzer, Long&gt;&lt;hr&gt;+ findByUsername(String) : Optional&lt;Benutzer&gt;&lt;br&gt;+ findByStandortId(Long) : List&lt;Benutzer&gt;" vertex="1">
+          <mxGeometry height="120" width="300" x="40" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="BerichtRepository" parent="a0hnjVpa3WqoAd-sNYzg-11" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;interface&gt;&gt;&lt;br&gt;BerichtRepository&lt;/b&gt;&lt;hr&gt;extends JpaRepository&lt;Bericht, Long&gt;&lt;hr&gt;+ findByStandortId(Long) : List&lt;Bericht&gt;" vertex="1">
+          <mxGeometry height="104" width="300" x="40" y="274" as="geometry" />
+        </mxCell>
+        <mxCell id="EmissionEintragRepository" parent="a0hnjVpa3WqoAd-sNYzg-11" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;interface&gt;&gt;&lt;br&gt;EmissionEintragRepository&lt;/b&gt;&lt;hr&gt;extends JpaRepository&lt;EmissionEintrag, Long&gt;&lt;hr&gt;+ findByStandortId(Long) : List&lt;EmissionEintrag&gt;&lt;br&gt;+ findByStandortIdAndDatumBetween(Long, LocalDate, LocalDate) : List&lt;EmissionEintrag&gt;&lt;br&gt;+ findByDatumBetween(LocalDate, LocalDate) : List&lt;EmissionEintrag&gt;&lt;br&gt;+ sumCo2ProStandort() : List&lt;Object[]&gt;&lt;br&gt;+ sumCo2ProStandort(Long) : List&lt;Object[]&gt;" vertex="1">
+          <mxGeometry height="168" width="340" x="20" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="a0hnjVpa3WqoAd-sNYzg-12" connectable="0" parent="1" style="group;fillColor=#fad9d5;strokeColor=#FF3399;opacity=20;" value="" vertex="1">
+          <mxGeometry height="940" width="290" x="1503" y="1341" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_entity" parent="a0hnjVpa3WqoAd-sNYzg-12" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#0F8B8D;fontSize=13;fontStyle=1;spacingTop=6;spacingLeft=6;rounded=1;labelBackgroundColor=#ECFEFF;fontColor=#143642;strokeWidth=2;opacity=40;" value="package entity" vertex="1">
+          <mxGeometry height="940" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Standort" parent="a0hnjVpa3WqoAd-sNYzg-12" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;Standort&lt;/b&gt;&lt;hr&gt;- id : Long&lt;br&gt;- name : String&lt;br&gt;- adresse : String&lt;br&gt;- erstelltAm : LocalDateTime&lt;hr&gt;(Lombok @Data: Getter/Setter)" vertex="1">
+          <mxGeometry height="152" width="250" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Benutzer" parent="a0hnjVpa3WqoAd-sNYzg-12" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;Benutzer&lt;/b&gt;&lt;hr&gt;- id : Long&lt;br&gt;- username : String&lt;br&gt;- email : String&lt;br&gt;- passwort : String&lt;br&gt;- rolle : RolleEnum&lt;br&gt;- aktiv : boolean&lt;br&gt;- erstelltAm : LocalDateTime&lt;br&gt;- standort : Standort&lt;hr&gt;(Lombok @Data: Getter/Setter)" vertex="1">
+          <mxGeometry height="216" width="250" x="30" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="EmissionEintrag" parent="a0hnjVpa3WqoAd-sNYzg-12" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;EmissionEintrag&lt;/b&gt;&lt;hr&gt;- id : Long&lt;br&gt;- kategorie : KategorieEnum&lt;br&gt;- wertCo2Kg : Double&lt;br&gt;- beschreibung : String&lt;br&gt;- datum : LocalDate&lt;br&gt;- erfasstAm : LocalDateTime&lt;br&gt;- standort : Standort&lt;br&gt;- erfasstVon : Benutzer&lt;hr&gt;(Lombok @Data: Getter/Setter)" vertex="1">
+          <mxGeometry height="216" width="250" x="30" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="Bericht" parent="a0hnjVpa3WqoAd-sNYzg-12" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;Bericht&lt;/b&gt;&lt;hr&gt;- id : Long&lt;br&gt;- zeitraumVon : LocalDate&lt;br&gt;- zeitraumBis : LocalDate&lt;br&gt;- gesamtCo2Kg : double&lt;br&gt;- erstelltAm : LocalDate&lt;br&gt;- dateiPfad : String&lt;br&gt;- standort : Standort&lt;br&gt;- erstelltVon : Benutzer&lt;hr&gt;(Lombok @Data: Getter/Setter)" vertex="1">
+          <mxGeometry height="216" width="250" x="30" y="684" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-12" source="Standort" style="html=1;endArrow=none;startArrow=none;fontSize=10;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="Benutzer" value="1        n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-12" source="Standort" style="html=1;endArrow=none;startArrow=none;fontSize=10;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="EmissionEintrag" value="1        n">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="116" />
+              <mxPoint x="330" y="527.46" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-12" source="Benutzer" style="html=1;endArrow=none;startArrow=none;fontSize=10;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="EmissionEintrag" value="erfasst 1:n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-12" source="Standort" style="html=1;endArrow=none;startArrow=none;fontSize=10;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="Bericht" value="1        n">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370.57" y="105.57" />
+              <mxPoint x="370.57" y="792" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="a0hnjVpa3WqoAd-sNYzg-12" source="Benutzer" style="html=1;endArrow=none;startArrow=none;fontSize=10;labelBackgroundColor=none;strokeColor=#A8201A;fontColor=default;edgeStyle=orthogonalEdgeStyle;curved=0;" target="Bericht" value="erstellt 1:n">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="344" y="301.62" />
+              <mxPoint x="344" y="779.69" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a0hnjVpa3WqoAd-sNYzg-13" connectable="0" parent="1" style="group;fillColor=#d0cee2;strokeColor=#56517e;opacity=20;" value="" vertex="1">
+          <mxGeometry height="332" width="270" x="2013" y="1355" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_enums" parent="a0hnjVpa3WqoAd-sNYzg-13" style="shape=folder;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#0F8B8D;fontSize=13;fontStyle=1;spacingTop=6;spacingLeft=6;rounded=1;labelBackgroundColor=#ECFEFF;fontColor=#143642;strokeWidth=2;opacity=40;" value="package enums" vertex="1">
+          <mxGeometry height="332" width="270" as="geometry" />
+        </mxCell>
+        <mxCell id="RolleEnum" parent="a0hnjVpa3WqoAd-sNYzg-13" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;enumeration&gt;&gt;&lt;br&gt;RolleEnum&lt;/b&gt;&lt;hr&gt;ADMINISTRATOR&lt;br&gt;NACHHALTIGKEITSBEAUFTRAGTER&lt;br&gt;FUEHRUNGSKRAFT&lt;br&gt;BENUTZER" vertex="1">
+          <mxGeometry height="116" width="230" x="20" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KategorieEnum" parent="a0hnjVpa3WqoAd-sNYzg-13" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;fillColor=#FAE5C7;strokeColor=#0F8B8D;labelBackgroundColor=none;fontColor=#143642;" value="&lt;b&gt;&lt;&lt;enumeration&gt;&gt;&lt;br&gt;KategorieEnum&lt;/b&gt;&lt;hr&gt;GESCHAEFTSREISE&lt;br&gt;STROMVERBRAUCH&lt;br&gt;FUHRPARK&lt;br&gt;SONSTIGES" vertex="1">
+          <mxGeometry height="116" width="230" x="20" y="206" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

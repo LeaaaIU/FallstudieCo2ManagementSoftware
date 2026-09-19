@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" background="#ffffff">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" style="background=#ffffff;" />
+
+    <!-- ══════════════════════════════════════════
+         LOGIN (zentral oben, neutral grau)
+    ══════════════════════════════════════════ -->
+    <mxCell id="2" value="&lt;b&gt;Login&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#666;'&gt;/login&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontColor=#333333;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="490" y="50" width="160" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         BEREICH: Nachhaltigkeitsbeauftragte:r
+         Farbe: Grün  #d5e8d4 / #82b366
+    ══════════════════════════════════════════ -->
+
+    <!-- Emissionsübersicht -->
+    <mxCell id="3" value="&lt;b&gt;Emissionsübersicht&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#336b2f;'&gt;/emissionen&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1e4d1c;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="80" y="200" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- Emission erfassen -->
+    <mxCell id="4" value="&lt;b&gt;Emission erfassen&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#336b2f;'&gt;/emissionen/neu&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1e4d1c;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="80" y="360" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- Berichte (NB) -->
+    <mxCell id="5" value="&lt;b&gt;Berichte&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#336b2f;'&gt;/berichte&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1e4d1c;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="80" y="520" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         BEREICH: Administrator
+         Farbe: Lila  #e1d5e7 / #9673a6
+    ══════════════════════════════════════════ -->
+
+    <!-- Benutzerverwaltung -->
+    <mxCell id="6" value="&lt;b&gt;Benutzerverwaltung&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#5a3a6e;'&gt;/admin/benutzer&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#3d2050;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="455" y="200" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- Standortverwaltung -->
+    <mxCell id="7" value="&lt;b&gt;Standortverwaltung&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#5a3a6e;'&gt;/admin/standorte&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#3d2050;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="455" y="360" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         BEREICH: Führungskraft
+         Farbe: Orange/Rot  #f8cecc / #b85450
+    ══════════════════════════════════════════ -->
+
+    <!-- Dashboard -->
+    <mxCell id="8" value="&lt;b&gt;Dashboard&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#7d2a28;'&gt;/dashboard&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#6b1a18;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="830" y="200" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- Berichte (FK) -->
+    <mxCell id="9" value="&lt;b&gt;Berichte&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;color:#7d2a28;'&gt;/berichte&lt;/font&gt;" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#6b1a18;fontSize=13;arcSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="830" y="360" width="210" height="54" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         PFEILE: Login → erste Seite je Rolle
+         Farbig nach Rolle
+    ══════════════════════════════════════════ -->
+
+    <!-- Login → Emissionsübersicht (grün) -->
+    <mxCell id="20" edge="1" source="2" target="3" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#82b366;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#82b366;fontSize=11;" />
+    </mxCell>
+
+    <!-- Login → Benutzerverwaltung (lila) -->
+    <mxCell id="21" edge="1" source="2" target="6" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#9673a6;strokeWidth=2;fontColor=#9673a6;fontSize=11;" />
+    </mxCell>
+
+    <!-- Login → Dashboard (rot) -->
+    <mxCell id="22" edge="1" source="2" target="8" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#b85450;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#b85450;fontSize=11;" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         PFEILE: innerhalb der Bereiche
+    ══════════════════════════════════════════ -->
+
+    <!-- Emissionsübersicht → Emission erfassen (grün) -->
+    <mxCell id="23" edge="1" source="3" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#82b366;strokeWidth=2;" />
+    </mxCell>
+
+    <!-- Emissionsübersicht → Berichte NB (grün) -->
+    <mxCell id="24" edge="1" source="3" target="5" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="40" y="227" />
+          <mxPoint x="40" y="547" />
+        </Array>
+      </mxGeometry>
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#82b366;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" />
+    </mxCell>
+
+    <!-- Benutzerverwaltung → Standortverwaltung (lila) -->
+    <mxCell id="25" edge="1" source="6" target="7" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#9673a6;strokeWidth=2;" />
+    </mxCell>
+
+    <!-- Dashboard → Berichte FK (rot) -->
+    <mxCell id="26" edge="1" source="8" target="9" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#b85450;strokeWidth=2;" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         LEGENDE
+    ══════════════════════════════════════════ -->
+
+    <mxCell id="40" value="Legende" 
+      style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#333333;" 
+      vertex="1" parent="1">
+      <mxGeometry x="80" y="650" width="100" height="30" as="geometry" />
+    </mxCell>
+
+    <mxCell id="41" value="Nachhaltigkeitsbeauftragte:r / Benutzer:in" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1e4d1c;fontSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="80" y="688" width="310" height="36" as="geometry" />
+    </mxCell>
+
+    <mxCell id="42" value="Administrator:in" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#3d2050;fontSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="410" y="688" width="200" height="36" as="geometry" />
+    </mxCell>
+
+    <mxCell id="43" value="Führungskraft" 
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#6b1a18;fontSize=12;" 
+      vertex="1" parent="1">
+      <mxGeometry x="630" y="688" width="180" height="36" as="geometry" />
+    </mxCell>
+
+    <!-- ══════════════════════════════════════════
+         HINWEIS React Router
+    ══════════════════════════════════════════ -->
+
+    <mxCell id="50" value="React Router – clientseitiges Routing · kein Seitenneuladen · rollenbasierte Route Guards" 
+      style="text;html=1;strokeColor=#cccccc;fillColor=#fafafa;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontStyle=2;fontColor=#888888;rounded=1;" 
+      vertex="1" parent="1">
+      <mxGeometry x="80" y="750" width="760" height="34" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
